@@ -1,8 +1,12 @@
 // Card.js
-import React from 'react';
-import '../index.css'; 
+interface CardProps {
+    image: string;
+    title: string;
+    description: string;
+}
 
-const Card = ({ image, title, description }) => {
+
+const Card = ({ image, title, description }: CardProps) => {
     return (
         <div className="card">
             <div className="card-image-container">

@@ -1,5 +1,3 @@
-import React from 'react';
-import '../index.css'; 
 import RB_logo from '../assets/RB_logo.png'
 import Card from './Card';
 import Promovideo from '../assets/promovideo.mp4'
