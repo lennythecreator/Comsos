@@ -1,9 +1,13 @@
 import RB_logo from '../assets/RB_logo.png'
 import Card from './Card';
 import Promovideo from '../assets/promovideo.mp4'
+import { useAuth0 } from '@auth0/auth0-react';
 
 // Main body of landing page broken down into four sections
-const LandingContent = () => {
+const Home = () => {
+    
+    const {loginWithRedirect} = useAuth0()
+
     return ( 
         <div>
             {/* Section 1 containing title and image */}
@@ -52,10 +56,10 @@ const LandingContent = () => {
             <section className='landing_section4'>
             <video src='' /> 
                 <h3 className='section4_title'>Register today!</h3>
-                <button className='access-button'>Sign up </button>
+                <button className='access-button' onClick={() => loginWithRedirect()}>Sign up </button>
             </section>
         </div>
     )
 }
 
-export default LandingContent;
+export default Home;
