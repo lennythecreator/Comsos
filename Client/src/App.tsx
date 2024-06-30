@@ -9,16 +9,16 @@ function App() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
 
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={isAuthenticated ? <h1>Welcome {user?.given_name}</h1> : <div>Please Log in</div>} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={isAuthenticated ? <h1>Welcome {user?.given_name}</h1> : <div>Please Log in</div>} />
+        </Routes>
+      </Router>
 
-    <Footer />
+      <Footer />
 
 
 
