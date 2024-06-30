@@ -1,0 +1,197 @@
+/* Navigation */
+nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .nav-title {
+    margin-right: 10px;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-button:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-button:last-child {
+    margin-left: auto;
+  }
+  
+  /* Body */
+  body {
+    margin: 0;
+    padding-top: 65px;
+  }
+  
+  /* Landing Section 1 */
+  .landing_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .section1_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .section1_header {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .section1_content p {
+    margin: 10px 0;
+  }
+  
+  .section1_logo {
+    max-width: 30%;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  /* Landing Section 2 */
+  .landing_section2 {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .section2_title {
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 30%;
+  }
+  
+  .card-image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Landing Section 3 */
+  .landing_section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .video-container h2 {
+    margin-top: 0;
+  }
+  
+  /* Landing Section 4 */
+  .landing_section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .section4_title {
+    margin-top: -100px; /* bad practice but a quick fix for the moment*/
+    font-size: 2em;
+    padding: 2px; 
+  }
+  
+  .access-button {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .access-button:hover {
+    background-color: #333;
+  }
+  
+  
+  /* Footer */
+  footer {
+    text-align: left;
+    background-color: white;
+   
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    margin-top: 0;
+  }
+  
+  .footer-copyright {
+    margin: 5px 20px;
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .footer-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .footer-btn:hover {
+    text-decoration: underline;
+  }
