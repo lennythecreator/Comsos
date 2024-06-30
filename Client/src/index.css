@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
 
 /* Navigation */
 nav {
@@ -22,8 +23,9 @@ nav {
   
   .nav-title {
     margin-right: 10px;
+    font-size: 24px;
     font-weight: bolder;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .nav-button {
@@ -36,10 +38,11 @@ nav {
     cursor: pointer;
     text-decoration: none;
     position: relative;
+    transition: color 0.3s ease-in;
   }
   
   .nav-button:hover {
-    text-decoration: underline;
+    color: #c6d8e7;
   }
   
   .nav-button:last-child {

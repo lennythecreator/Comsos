@@ -13,7 +13,7 @@ const Home = () => {
             {/* Section 1 containing title and image */}
             <section className='landing_section1'>
                 <div className='section1_content'>
-                    <h1 className='section1_header'>Manage Speakers <br></br>Seamlessly</h1>
+                    <h1 className='section1_header text-xl font-bold leading-8'>Manage Speakers <br></br>Seamlessly</h1>
                     </div>
                     <img src={RB_logo} alt='ResearchBookmark_logo' className='section1_logo'/> 
             </section>
@@ -54,9 +54,9 @@ const Home = () => {
             </section>
             {/* Section 4 with title and signup button */}
             <section className='landing_section4'>
-            <video src='' /> 
-                <h3 className='section4_title'>Register today!</h3>
-                <button className='access-button' onClick={() => loginWithRedirect()}>Sign up </button>
+                <video src='' className='m-1' /> 
+                    <h3 className='section4_title font-bold m-2'>Register today!</h3>
+                    <button className='access-button' onClick={() => loginWithRedirect()}>Sign up </button>
             </section>
         </div>
     )
