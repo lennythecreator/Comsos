@@ -3,6 +3,8 @@ import { useAuth0 } from '@auth0/auth0-react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import Widget from './components/Widget'
+
 
 function App() {
   const {user, isAuthenticated} = useAuth0()
@@ -14,7 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={isAuthenticated ? <h1>Welcome {user?.given_name}</h1> : <div>Please Log in</div>} />
+          <Route path="/profile" element={isAuthenticated ? <><h1>Welcome {user?.given_name}</h1><Widget /> </>: <div>Please Log in</div>} />
         </Routes>
       </Router>
 

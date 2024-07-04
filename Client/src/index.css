@@ -178,7 +178,6 @@ nav {
   footer {
     text-align: left;
     background-color: white;
-   
   }
   
   hr {
@@ -210,3 +209,49 @@ nav {
   .footer-btn:hover {
     text-decoration: underline;
   }
+
+  /* Container Widget*/
+
+  .widget_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .widget {
+    background-color: #f0f0f0;
+    border-radius: 10px; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .widget_title {
+    font-size: 2em;
+    padding: 2px; 
+    color: #000000;
+  }
+
+  .widget img {
+    width: 235px; 
+    height: 220px; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .event_btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 20px; 
+    margin-bottom: 25px;
+  }
+  
+  .event_btn:hover {
+    background-color: #333; 
+  }
+  
